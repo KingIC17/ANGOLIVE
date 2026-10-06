@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANGOLIVE agora é Tuende</title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://kingic17.github.io/tuende/">
+    <script>
+        // ANGOLIVE is now Tuende. Send every old link to the same page at the new address, keeping #local-N and ?page=.
+        (function () {
+            var NEW = 'https://kingic17.github.io/tuende/';
+            var path = location.pathname.replace(/^\/ANGOLIVE\/?/i, '');
+            if (path === 'index.html' || path === 'angolive-complete.html') path = '';
+            location.replace(NEW + path + location.search + location.hash);
+        })();
+    </script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #FFFFFF; color: #161618; display: grid; place-items: center; min-height: 100vh; margin: 0; padding: 16px; text-align: center; }
+        a { color: #CE1126; font-weight: 700; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <p>O ANGOLIVE agora chama-se Tuende. ANGOLIVE is now Tuende.<br><a href="https://kingic17.github.io/tuende/">kingic17.github.io/tuende</a></p>
+</body>
+</html>
